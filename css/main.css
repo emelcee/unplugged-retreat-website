@@ -130,11 +130,11 @@ textarea {
    }
 
    img {
-
+     width: 100%;
    }
 
    figure {
-
+     margin: 0;
    }
 
    address {
@@ -175,7 +175,11 @@ header .content-wrapper {
 }
 
 header figure {
-
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -251,6 +255,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-image.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -298,6 +305,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-image.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -321,6 +330,8 @@ input[type=button] {
   text-align: center;
 }
 
+/**Reviews section - mobile styles **/
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -337,6 +348,7 @@ input[type=button] {
   width: 55%;
   margin: 20px 0;
 }
+
 
 
 /* ------------ Mobile Styles - About page ------------ */
@@ -529,6 +541,10 @@ input[type=button] {
 
   /*Hero Area*/
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -568,17 +584,18 @@ input[type=button] {
   }
 
   /*Reviews*/
+
   .reviews article {
     display: flex;
     justify-content: space-between;
-
   }
 
   .reviews h2 {
     width: 85%;
   }
 
-  .reviews article div {
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
   }
 
@@ -586,6 +603,7 @@ input[type=button] {
     width: 75%;
     margin: 0;
   }
+
 
   /*Footer*/
   footer .content-wrapper {
@@ -595,8 +613,9 @@ input[type=button] {
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -696,9 +715,10 @@ input[type=button] {
     font-size: 1.875em;
   }
 
+
 /*Hero Area*/
 .hero-area h1 {
-  width: 60%;
+  width: 80%;
   font-size: 3.75em;
 }
 
@@ -729,9 +749,10 @@ input[type=button] {
   padding-bottom: 50px;
 }
 
-.reviews article div {
+.reviews article div{
         width: 42%;
     }
+
 
 /* ==========================================================================
   About Page
