@@ -102,6 +102,8 @@ textarea {
    ul,
    ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
    }
 
    a {
@@ -206,6 +208,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
 }
+
 /* Footer Styles */
 
 footer {
